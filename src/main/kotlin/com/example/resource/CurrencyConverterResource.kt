@@ -18,6 +18,7 @@ class CurrencyConverterResource {
         @RequestParam("from") from: String,
         @RequestParam("amount") amount: Int
     ): CurrencyConverterDTO {
+
         return currencyConverterService.currencyConverter(to, from, amount)
     }
 
