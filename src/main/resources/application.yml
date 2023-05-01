@@ -1,0 +1,16 @@
+app:
+  currency:
+    converter:
+      convert: "https://api.apilayer.com/exchangerates_data/convert"
+    apiKey: "F9jMKN5xRI05F7x3105vpv7dLU5232Le"
+logging:
+  level:
+    root: INFO
+    com.example.proxy: INFO
+spring:
+  profiles:
+    active: local
+  cloud:
+    config:
+      import-check:
+        enabled: false
